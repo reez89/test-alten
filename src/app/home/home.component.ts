@@ -5,16 +5,17 @@ import { posts } from '../mock-data/mock-data';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: [ './home.component.scss' ]
 })
 export class HomeComponent implements OnInit {
 
-  posts: PostInterface[] = []
+  posts: PostInterface[] = [];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
-    this.posts = posts
+    this.posts = posts;
   }
 
 }
