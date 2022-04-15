@@ -1,15 +1,11 @@
 <main class="posts-container  px-0">
   <div
-    class="posts-information d-flex align-items-center"
+    class="posts-information d-flex align-items-center py-2"
     *ngFor="let post of posts">
     <div class="square"></div>
     <div class="info">
-      <ul class="mx-0 my-0 p-0">
-        <li id="{{ post.id }}">
-          <h3>{{ post.title }}</h3>
-          <p>{{ post.body }}</p>
-        </li>
-      </ul>
+      <h3>{{ post.title }}</h3>
+      <p class="m-0">{{ post.body }}</p>
     </div>
   </div>
 </main>
